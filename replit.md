@@ -25,3 +25,14 @@ pnpm workspace monorepo using TypeScript. Each package manages its own dependenc
 - `pnpm --filter @workspace/api-server run dev` — run API server locally
 
 See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and package details.
+
+## GitHub Integration
+
+- **GitHub account**: zuko-nova
+- **Repository**: https://github.com/zuko-nova/workspace
+- **Token**: Stored as `GITHUB_PERSONAL_ACCESS_TOKEN` secret
+- **Note**: GitHub integration uses the Personal Access Token (not Replit OAuth). To push code to GitHub, run the following in the Shell:
+  ```bash
+  git remote add github https://zuko-nova:$GITHUB_PERSONAL_ACCESS_TOKEN@github.com/zuko-nova/workspace.git
+  git push github main
+  ```
