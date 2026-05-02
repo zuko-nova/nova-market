@@ -31,8 +31,8 @@ See the `pnpm-workspace` skill for workspace structure, TypeScript setup, and pa
 - **GitHub account**: zuko-nova
 - **Repository**: https://github.com/zuko-nova/workspace
 - **Token**: Stored as `GITHUB_PERSONAL_ACCESS_TOKEN` secret
+- **CI/CD**: GitHub Actions workflow at `.github/workflows/ci.yml` — runs typecheck and build on every push to `main`
 - **Note**: GitHub integration uses the Personal Access Token (not Replit OAuth). To push code to GitHub, run the following in the Shell:
   ```bash
-  git remote add github https://zuko-nova:$GITHUB_PERSONAL_ACCESS_TOKEN@github.com/zuko-nova/workspace.git
-  git push github main
+  bash push-to-github.sh
   ```
