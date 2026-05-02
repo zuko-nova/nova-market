@@ -2,7 +2,7 @@
 set -e
 
 GITHUB_USER="zuko-nova"
-REPO_NAME="workspace"
+REPO_NAME="nova-market"
 REMOTE_URL="https://${GITHUB_USER}:${GITHUB_PERSONAL_ACCESS_TOKEN}@github.com/${GITHUB_USER}/${REPO_NAME}.git"
 
 echo "Setting up GitHub remote..."
