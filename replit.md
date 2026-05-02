@@ -66,8 +66,6 @@ All routes under `/api`:
 - **GitHub account**: zuko-nova
 - **Repository**: https://github.com/zuko-nova/nova-market
 - **Token**: Stored as `GITHUB_PERSONAL_ACCESS_TOKEN` secret
-- **CI/CD**: GitHub Actions workflow at `.github/workflows/ci.yml`
-- **Note**: To push code to GitHub, run the following in the Shell:
-  ```bash
-  bash push-to-github.sh
-  ```
+- **CI/CD**: GitHub Actions workflow at `.github/workflows/ci.yml` — runs typecheck and build on every push to main
+- **Auto-sync**: `scripts/post-merge.sh` pushes to GitHub automatically after every task merge (no manual steps needed)
+- **Manual fallback**: Run `bash push-to-github.sh` in the Shell to push on demand
