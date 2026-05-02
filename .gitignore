@@ -1,49 +1,62 @@
-# See https://docs.github.com/en/get-started/getting-started-with-git/ignoring-files for more about ignoring files.
+# Compiled output
+dist/
+tmp/
+out-tsc/
+build/
 
-# compiled output
-dist
-tmp
-out-tsc
+# TypeScript build info
 *.tsbuildinfo
-.expo
-.expo-shared
 
-# dependencies
-node_modules
+# Dependencies
+node_modules/
+
+# Logs
+npm-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.log
+
+# Environment variables
+.env
+.env.local
+.env.*.local
 
 # IDEs and editors
-/.idea
-.project
-.classpath
-.c9/
-*.launch
-.settings/
-*.sublime-workspace
-
-# IDE - VSCode
+.idea/
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+*.sublime-workspace
+*.launch
+.project
+.classpath
+.c9/
+.settings/
 
-# misc
-/.sass-cache
-/connect.lock
-/coverage
-/libpeerconnection.log
-npm-debug.log
-yarn-error.log
-testem.log
-/typings
-
-# System Files
+# OS files
 .DS_Store
 Thumbs.db
 
-.cursor/rules/nx-rules.mdc
-.github/instructions/nx.instructions.md
+# Expo
+.expo/
+.expo-shared/
 
-# Replit
+# Coverage
+coverage/
+
+# Misc
+/.sass-cache
+/connect.lock
+/libpeerconnection.log
+/typings
+
+# Replit internal
 .cache/
 .local/
+
+# Generated files (rebuilt by codegen)
+lib/api-client-react/dist/
+lib/api-zod/dist/
+lib/db/dist/
